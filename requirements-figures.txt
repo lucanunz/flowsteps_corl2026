@@ -1,0 +1,6 @@
+# Versions used for the reproduction checks.
+numpy==2.2.6
+scipy==1.17.1
+pandas==3.0.3
+matplotlib==3.10.9
+sequentialized_barnard_tests==0.0.5

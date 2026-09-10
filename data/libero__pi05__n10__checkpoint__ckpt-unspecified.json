@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "setting": {"model":"pi05","benchmark":"libero","nsteps":10,"checkpoint":"unspecified","evaluation":"checkpoint","horizon":null},
+  "episodes": [
+
+  ],
+  "aggregates": {},
+  "pairing_note": "Supplemental source documents retained losslessly. No pairing is inferred from aggregate counts.",
+  "source_documents": {
+    "pi05_indepth/libero/videos_10stepflow/libero_10/final_results_libero_10.json": {"encoding":"json","payload":{"task_suite_name":"libero_10","total_successes":455,"total_episodes":500,"success_rate":0.91},"source_sha256":"a77b52ddb4ba1972eac903ce23e9984d9706507e8f63ab7c7f8ee720118b1b05"}
+  },
+  "task_counts": [],
+  "normalization": {"conflicting_episode_keys":[],"conflicting_count_keys":[],"source_documents_preserved":true}
+}

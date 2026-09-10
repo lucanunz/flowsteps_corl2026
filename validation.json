@@ -1,0 +1,3474 @@
+{
+  "settings": 193,
+  "episodes": 444329,
+  "source_documents": 7758,
+  "verified_source_documents": 7736,
+  "verified_log_sources": 1160,
+  "settings_inventory": [
+    {
+      "file": "calvin__flower__n1.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "initial_state_and_sequence": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__flower__n1__horizon_sweep__h1.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "initial_state_and_sequence": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__flower__n1__horizon_sweep__h5.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 5
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "initial_state_and_sequence": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__flower__n4.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "calvin",
+        "nsteps": 4,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "initial_state_and_sequence": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__flower__n4__horizon_sweep__h1.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "calvin",
+        "nsteps": 4,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "initial_state_and_sequence": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__flower__n4__horizon_sweep__h5.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "calvin",
+        "nsteps": 4,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 5
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "initial_state_and_sequence": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__mibot__n1.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "initial_state_and_sequence": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__mibot__n1__horizon_sweep__h1.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "sequence_index": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__mibot__n1__horizon_sweep__h5.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 5
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "sequence_index": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__mibot__n5.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "calvin",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "initial_state_and_sequence": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__mibot__n5__horizon_sweep__h1.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "calvin",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "sequence_index": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__mibot__n5__horizon_sweep__h5.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "calvin",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 5
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "sequence_index": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__xvla__n1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "assumed_order": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__xvla__n10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "calvin",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "assumed_order": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__xvla__n10__horizon_sweep__h1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "calvin",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "sequence_index": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__xvla__n10__horizon_sweep__h10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "calvin",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 10
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "sequence_index": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__xvla__n1__horizon_sweep__h1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "sequence_index": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "calvin__xvla__n1__horizon_sweep__h10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "calvin",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 10
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "sequence_index": 1000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-pretrained-10000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "pretrained-10000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-pretrained-20000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "pretrained-20000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-pretrained-final_model.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "pretrained-final_model",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-scratchALL-10000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "scratchALL-10000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-scratchALL-20000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "scratchALL-20000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-scratchALL-30000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "scratchALL-30000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-scratchVisOnly-10000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "scratchVisOnly-10000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-scratchVisOnly-20000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "scratchVisOnly-20000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n10__checkpoint__ckpt-scratchVisOnly-30000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "scratchVisOnly-30000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-pretrained-10000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "pretrained-10000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-pretrained-20000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "pretrained-20000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-pretrained-final_model.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "pretrained-final_model",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-scratchALL-10000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "scratchALL-10000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-scratchALL-20000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "scratchALL-20000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-scratchALL-30000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "scratchALL-30000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-scratchVisOnly-10000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "scratchVisOnly-10000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-scratchVisOnly-20000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "scratchVisOnly-20000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__dit__n1__checkpoint__ckpt-scratchVisOnly-30000.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "scratchVisOnly-30000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1__checkpoint__ckpt-16000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "16000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1__checkpoint__ckpt-24000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "24000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1__checkpoint__ckpt-32000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "32000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1__checkpoint__ckpt-40000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "40000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1__checkpoint__ckpt-8000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "8000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1__horizon_sweep__ckpt-24000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "24000",
+        "evaluation": "horizon_sweep",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1__horizon_sweep__ckpt-24000__h1.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "24000",
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n1__horizon_sweep__ckpt-24000__h5.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "24000",
+        "evaluation": "horizon_sweep",
+        "horizon": 5
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4__checkpoint__ckpt-16000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": "16000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4__checkpoint__ckpt-24000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": "24000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4__checkpoint__ckpt-32000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": "32000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4__checkpoint__ckpt-40000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": "40000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4__checkpoint__ckpt-8000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": "8000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4__horizon_sweep__ckpt-24000.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": "24000",
+        "evaluation": "horizon_sweep",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4__horizon_sweep__ckpt-24000__h1.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": "24000",
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__flower__n4__horizon_sweep__ckpt-24000__h5.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "libero",
+        "nsteps": 4,
+        "checkpoint": "24000",
+        "evaluation": "horizon_sweep",
+        "horizon": 5
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__lap__n1.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__lap__n10.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__lap__n10__horizon_sweep__h1.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__lap__n10__horizon_sweep__h10.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 10
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__lap__n1__horizon_sweep__h1.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__lap__n1__horizon_sweep__h10.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 10
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__lap__n2.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "libero",
+        "nsteps": 2,
+        "checkpoint": null,
+        "evaluation": "primary",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__lap__n5.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "libero",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "primary",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__mibot__n1.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__mibot__n1__horizon_sweep__h1.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__mibot__n1__horizon_sweep__h5.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 5
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__mibot__n2.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "libero",
+        "nsteps": 2,
+        "checkpoint": null,
+        "evaluation": "primary",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__mibot__n5.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "libero",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__mibot__n5__horizon_sweep__h1.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "libero",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__mibot__n5__horizon_sweep__h5.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "libero",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 5
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-0noise.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "0noise",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 0,
+      "pairing_bases": {},
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-10k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "10k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-10k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "10k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-10k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "10k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-10k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "10k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-10k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "10k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-15k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "15k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-15k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "15k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-15k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "15k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-15k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "15k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-15k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "15k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-20k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "20k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-20k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "20k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-20k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "20k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-20k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "20k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-20k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "20k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-25k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "25k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-25k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "25k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-25k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "25k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-25k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "25k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-25k_scratchEveryting.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "25k_scratchEveryting",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-29k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "29k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-29k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "29k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-29k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "29k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 37,
+      "pairing_bases": {
+        "episode_id": 37
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-29k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "29k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-29k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "29k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-5k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "5k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-5k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "5k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-5k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "5k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-5k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "5k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-5k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "5k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__checkpoint__ckpt-unspecified.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "unspecified",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 0,
+      "pairing_bases": {},
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__horizon_sweep__h1.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n10__horizon_sweep__h10.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 10
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-0noise.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "0noise",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 0,
+      "pairing_bases": {},
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-10k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "10k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-10k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "10k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-10k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "10k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-10k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "10k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-10k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "10k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-15k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "15k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-15k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "15k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-15k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "15k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-15k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "15k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-15k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "15k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-20k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "20k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-20k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "20k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-20k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "20k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-20k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "20k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-20k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "20k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-25k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "25k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-25k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "25k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-25k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "25k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-25k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "25k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-25k_scratchEveryting.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "25k_scratchEveryting",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-29k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "29k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-29k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "29k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-29k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "29k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 1000,
+      "pairing_bases": {
+        "episode_id": 1000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-29k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "29k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-29k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "29k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-5k.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "5k",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-5k_libero10only.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "5k_libero10only",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 500,
+      "pairing_bases": {
+        "episode_id": 500
+      },
+      "task_counts": 10,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-5k_pretrainedVLM.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "5k_pretrainedVLM",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-5k_scratchActionExpOnly.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "5k_scratchActionExpOnly",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-5k_scratchEverything.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "5k_scratchEverything",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__checkpoint__ckpt-unspecified.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "unspecified",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 0,
+      "pairing_bases": {},
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__horizon_sweep__h1.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n1__horizon_sweep__h10.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 10
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 40,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n2.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 2,
+        "checkpoint": null,
+        "evaluation": "primary",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__pi05__n5.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "libero",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "primary",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__smolvla__n1.json",
+      "setting": {
+        "model": "smolvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__smolvla__n10.json",
+      "setting": {
+        "model": "smolvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "episode_id": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10__checkpoint__ckpt-10000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "10000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10__checkpoint__ckpt-20000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "20000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10__checkpoint__ckpt-30000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "30000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10__checkpoint__ckpt-40000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "40000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10__checkpoint__ckpt-50000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "50000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10__checkpoint__ckpt-60000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": "60000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10__horizon_sweep__h1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2151,
+      "pairing_bases": {
+        "assumed_order": 2151
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n10__horizon_sweep__h10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 10
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1__checkpoint__ckpt-10000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "10000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1__checkpoint__ckpt-20000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "20000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1__checkpoint__ckpt-30000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "30000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1__checkpoint__ckpt-40000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "40000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1__checkpoint__ckpt-50000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "50000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1__checkpoint__ckpt-60000.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": "60000",
+        "evaluation": "checkpoint",
+        "horizon": null
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1__horizon_sweep__h1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 1
+      },
+      "episodes": 2137,
+      "pairing_bases": {
+        "assumed_order": 2137
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "libero__xvla__n1__horizon_sweep__h10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "libero",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "horizon_sweep",
+        "horizon": 10
+      },
+      "episodes": 2000,
+      "pairing_bases": {
+        "assumed_order": 2000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__dit__n1.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "liberoplus",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "task_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__dit__n10.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "liberoplus",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "task_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__flower__n1.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "liberoplus",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "single_trial_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__flower__n4.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "liberoplus",
+        "nsteps": 4,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "single_trial_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__lap__n1.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "liberoplus",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "task_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__lap__n10.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "liberoplus",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "task_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__mibot__n1.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "liberoplus",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 9976,
+      "pairing_bases": {
+        "single_trial_variant": 9976
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__mibot__n5.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "liberoplus",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 9976,
+      "pairing_bases": {
+        "single_trial_variant": 9976
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__pi05__n1.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "liberoplus",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 9976,
+      "pairing_bases": {
+        "single_trial_variant": 9976
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__pi05__n10.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "liberoplus",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 9976,
+      "pairing_bases": {
+        "single_trial_variant": 9976
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__smolvla__n1.json",
+      "setting": {
+        "model": "smolvla",
+        "benchmark": "liberoplus",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "task_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__smolvla__n10.json",
+      "setting": {
+        "model": "smolvla",
+        "benchmark": "liberoplus",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "task_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__xvla__n1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "liberoplus",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "task_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "liberoplus__xvla__n10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "liberoplus",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 10030,
+      "pairing_bases": {
+        "task_variant": 10030
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__dit__n1.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "real_world",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__dit__n10.json",
+      "setting": {
+        "model": "dit",
+        "benchmark": "real_world",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__flower__n1.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "real_world",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__flower__n5.json",
+      "setting": {
+        "model": "flower",
+        "benchmark": "real_world",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__lap__n1.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "real_world",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__lap__n10.json",
+      "setting": {
+        "model": "lap",
+        "benchmark": "real_world",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__mibot__n1.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "real_world",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__mibot__n5.json",
+      "setting": {
+        "model": "mibot",
+        "benchmark": "real_world",
+        "nsteps": 5,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__pi05__n1.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "real_world",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__pi05__n10.json",
+      "setting": {
+        "model": "pi05",
+        "benchmark": "real_world",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__xvla__n1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "real_world",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "real_world__xvla__n10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "real_world",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 400,
+      "pairing_bases": {
+        "session_and_pair_id": 400
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "robotwin_clean__xvla__n1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "robotwin_clean",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 5000,
+      "pairing_bases": {
+        "seed": 5000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "robotwin_clean__xvla__n10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "robotwin_clean",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 5000,
+      "pairing_bases": {
+        "seed": 5000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "robotwin_rand__xvla__n1.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "robotwin_rand",
+        "nsteps": 1,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 5000,
+      "pairing_bases": {
+        "seed": 5000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    },
+    {
+      "file": "robotwin_rand__xvla__n10.json",
+      "setting": {
+        "model": "xvla",
+        "benchmark": "robotwin_rand",
+        "nsteps": 10,
+        "checkpoint": null,
+        "evaluation": "primary"
+      },
+      "episodes": 5000,
+      "pairing_bases": {
+        "seed": 5000
+      },
+      "task_counts": 0,
+      "conflicts": 0
+    }
+  ],
+  "pairing_coverage": [
+    {
+      "low": "calvin__flower__n1.json",
+      "high": "calvin__flower__n4.json",
+      "matched": 1000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "calvin__mibot__n1.json",
+      "high": "calvin__mibot__n5.json",
+      "matched": 1000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "calvin__xvla__n1.json",
+      "high": "calvin__xvla__n10.json",
+      "matched": 1000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__dit__n1.json",
+      "high": "libero__dit__n10.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__flower__n1.json",
+      "high": "libero__flower__n4.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__lap__n1.json",
+      "high": "libero__lap__n10.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__lap__n1.json",
+      "high": "libero__lap__n2.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__lap__n1.json",
+      "high": "libero__lap__n5.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__mibot__n1.json",
+      "high": "libero__mibot__n2.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__mibot__n1.json",
+      "high": "libero__mibot__n5.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__pi05__n1.json",
+      "high": "libero__pi05__n10.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__pi05__n1.json",
+      "high": "libero__pi05__n2.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__pi05__n1.json",
+      "high": "libero__pi05__n5.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__smolvla__n1.json",
+      "high": "libero__smolvla__n10.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "libero__xvla__n1.json",
+      "high": "libero__xvla__n10.json",
+      "matched": 2000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "liberoplus__dit__n1.json",
+      "high": "liberoplus__dit__n10.json",
+      "matched": 10030,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "liberoplus__flower__n1.json",
+      "high": "liberoplus__flower__n4.json",
+      "matched": 10030,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "liberoplus__lap__n1.json",
+      "high": "liberoplus__lap__n10.json",
+      "matched": 10030,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "liberoplus__mibot__n1.json",
+      "high": "liberoplus__mibot__n5.json",
+      "matched": 9976,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "liberoplus__pi05__n1.json",
+      "high": "liberoplus__pi05__n10.json",
+      "matched": 9976,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "liberoplus__smolvla__n1.json",
+      "high": "liberoplus__smolvla__n10.json",
+      "matched": 10030,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "liberoplus__xvla__n1.json",
+      "high": "liberoplus__xvla__n10.json",
+      "matched": 10030,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "real_world__dit__n1.json",
+      "high": "real_world__dit__n10.json",
+      "matched": 400,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "real_world__flower__n1.json",
+      "high": "real_world__flower__n5.json",
+      "matched": 400,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "real_world__lap__n1.json",
+      "high": "real_world__lap__n10.json",
+      "matched": 400,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "real_world__mibot__n1.json",
+      "high": "real_world__mibot__n5.json",
+      "matched": 400,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "real_world__pi05__n1.json",
+      "high": "real_world__pi05__n10.json",
+      "matched": 400,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "real_world__xvla__n1.json",
+      "high": "real_world__xvla__n10.json",
+      "matched": 400,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "robotwin_clean__xvla__n1.json",
+      "high": "robotwin_clean__xvla__n10.json",
+      "matched": 5000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    },
+    {
+      "low": "robotwin_rand__xvla__n1.json",
+      "high": "robotwin_rand__xvla__n10.json",
+      "matched": 5000,
+      "low_only": 0,
+      "high_only": 0,
+      "missing_outcomes": 0
+    }
+  ]
+}

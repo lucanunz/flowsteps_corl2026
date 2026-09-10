@@ -1,0 +1,19 @@
+# Generated assets (all reproducible via reproduce.py / scripts/plot.py)
+/figures/
+*.png
+*.pdf
+*.tex
+*.svg
+
+# Matplotlib cache written by the figure pipeline
+.mplconfig/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Scratch outputs
+.primary/
