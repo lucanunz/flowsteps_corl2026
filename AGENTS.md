@@ -44,6 +44,7 @@ scripts/
   plot.py              overview success-vs-steps figures
   validate.py          re-validates the export
   figures/             retained paper figure/statistics code (see below)
+ablations/             training-progress ablation figures (reads data/ directly)
 figures/               ALL generated output — untracked
 ```
 
@@ -56,6 +57,14 @@ figures/               ALL generated output — untracked
 - `TOST_analysis/gen_tost_verdict_tables.py` — compact LaTeX verdict tables.
 - `analyse_flow_ablation_crossbench.py` — cross-benchmark scatter plots.
 - `*/make_*_latex_table_glyph.py` — the glyph LaTeX result tables.
+
+`ablations/` runs as `reproduce.py ablations` (and as part of `all`), but not
+through the temp-tree materialization: its two scripts read the
+`evaluation == "checkpoint"` settings straight out of `data/` via
+`scripts/paired.py`, so they execute in place and write to `figures/ablations/`.
+`ablations/README.md` documents the checkpoint-to-series mapping and the one
+X-VLA point that comes from the primary evaluation instead of the checkpoint
+cohort.
 
 Each `tri_statistics_*` package splits the same way: `config.py` (constants,
 model order, styling), `io_*.py` (loading), `pairs.py` (pair construction),
@@ -194,7 +203,7 @@ python reproduce.py all               # full figure/table regeneration
 ```
 
 `reproduce.py all` is the real integration test — it exercises every retained
-paper script. It takes a few minutes and writes ~33 MB into `figures/`.
+paper script, the `ablations` target included. It takes a few minutes and writes ~33 MB into `figures/`.
 Run it after touching anything in `scripts/figures/`.
 
 If `validate.py` changes `validation.json`, that diff is meaningful: explain it,

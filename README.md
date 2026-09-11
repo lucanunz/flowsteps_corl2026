@@ -22,10 +22,11 @@ python -m pip install -r requirements-figures.txt  # paper figures and tables
 python scripts/validate.py                 # re-checks the export, writes validation.json
 python scripts/plot.py                     # overview figures
 python reproduce.py all                    # all paper figures, reports and tables
+python reproduce.py ablations              # training-progress ablation figures
 ```
 
 `reproduce.py` also takes a single target: `scatter`, `tost`, `simulation`,
-`violins`, or `glyphs`. Run `all` when regenerating `glyphs` — the LIBERO glyph
+`violins`, `glyphs`, or `ablations`. Run `all` when regenerating `glyphs` — the LIBERO glyph
 tables consume the STEP reports written by `violins`. Use `--output DIR` to
 write somewhere other than `figures/`.
 
@@ -52,9 +53,13 @@ equivalence test (default margin 3pp, alpha 0.05; CALVIN chains use a
 | `reproduce.py violins` | `figures/libero/tri_statistics_STEP/outputs/` | LIBERO / LIBERO+ per-step violin figures, appendix figures and per-model `*_report.md` STEP reports |
 | `reproduce.py glyphs` | `figures/calvin/tri_statistics_STEP/outputs/`, `figures/calvin/calvin_table_glyph.tex`, `figures/libero/*_glyph.tex` | CALVIN STEP figures and reports, plus the glyph LaTeX result tables used in the paper |
 | `scripts/validate.py` | `validation.json` (tracked) | Provenance and pairing-coverage report |
+| `reproduce.py ablations` | `figures/ablations/plot_grid_step_diff.{png,pdf}`, `.../plot{1,2,3}_*.{png,pdf}` | LIBERO step gap versus % of training — the 2×3 grid, plus the same ablations as individual success-rate and step-gap panels |
 
 A full `reproduce.py all` plus `plot.py` writes roughly 33 MB of PNG, PDF, TeX
-and Markdown into `figures/`.
+and Markdown into `figures/`. The `ablations` target is the exception to the
+`reproduce.py` model: its scripts read `data/` directly rather than the packed
+source documents, so they run in place instead of in the temporary tree. See
+`ablations/README.md`.
 
 ## Data
 
