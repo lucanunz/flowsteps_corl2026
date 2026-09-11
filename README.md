@@ -85,19 +85,11 @@ Supporting files: `task_metadata.json` (frozen LIBERO/LIBERO+ task tables),
 `shared_inputs.json` (source documents shared across settings),
 `source_inventory.json` and `validation.json` (provenance and coverage).
 
-Two settings are **aggregate-only**, both on the Pi0.5 `29k_pretrainedVLM`
-checkpoint. Their evaluations ran in full — 40 tasks, 2,000 trials each, with
-complete per-task success/failure counts in `task_counts`. What is missing is
-only the per-episode console record, which survives for some suites and not
-others: at 10 steps, 37 of 2,000 episodes (`libero_goal` and `libero_spatial`
-only); at 1 step, 1,000 of 2,000 (`libero_10` and `libero_object` only). No
-trials are unaccounted for; the episode-level transcript that pairing needs was
-simply never captured for the remaining suites.
-
-Use their `task_counts` for marginal success rates. They cannot be paired
-against each other under any flag — the surviving suites are disjoint, so the
-intersection is empty and `analyze.py` fails on them with or without
-`--allow-partial`. See `VALIDATION.md`.
+Four Pi0.5 `checkpoint` settings — the `ckpt-0noise` and `ckpt-unspecified`
+pairs — carry no normalized rows at all: `episodes`, `task_counts` and
+`aggregates` are empty, and only the packed `source_documents` hold their
+suite-level totals. Nothing pairs against them and no figure reads them. Every
+other setting has a per-episode record.
 
 `AGENTS.md` documents the pairing rules, statistical conventions and repository
 layout in full.

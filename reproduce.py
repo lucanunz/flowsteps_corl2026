@@ -34,7 +34,7 @@ def ablations(output,env):
     # Outside the temp-tree pipeline: these read data/ directly, not the packed
     # source documents, so they run in place and write straight to the output.
     out=output/'ablations';out.mkdir(parents=True,exist_ok=True)
-    for name in ('plot_paper_training_curves_grid.py','plot_paper_training_curves.py'):
+    for name in ('plot_paper_training_curves_grid.py','plot_paper_training_curves_grid_ci.py','plot_paper_training_curves.py'):
         subprocess.run([sys.executable,str(ROOT/'ablations'/name),'--data',str(ROOT/'data'),'--out_dir',str(out)],env=env,check=True)
     return sum(1 for path in out.rglob('*') if path.is_file())
 

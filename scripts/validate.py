@@ -11,7 +11,6 @@ from paired import key,load
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1]);p.add_argument('--source',type=Path);p.add_argument('--output',type=Path);a=p.parse_args()
     output=a.output or a.root/'validation.json'
-    prior=json.loads(output.read_text()) if output.exists() else {}
     settings=set();datasets={};documents=json.loads((a.root/'shared_inputs.json').read_text());rows=[]
     for path in sorted((a.root/'data').glob('*.json')):
         d=load(path);s=d['setting'];sk=json.dumps(s,sort_keys=True)
@@ -21,6 +20,18 @@ def main():
         for name,doc in d.get('source_documents',{}).items():
             if name in documents:raise ValueError(f'Duplicated source document: {name}')
             documents[name]=doc
+    # In-repo integrity, recomputed on every run: every packed document carrying a
+    # hash must agree with source_inventory.json, and the inventory must list
+    # nothing the export does not hold. This needs no original log tree, so unlike
+    # the --source pass below it is never a carried-forward claim.
+    inventory={e['path']:e['sha256'] for e in json.loads((a.root/'source_inventory.json').read_text())}
+    hashed={name:doc['source_sha256'] for name,doc in documents.items() if doc.get('source_sha256')}
+    def _sample(names):return ', '.join(sorted(names)[:3])+(' ...' if len(names)>3 else '')
+    if set(hashed)-set(inventory):raise ValueError(f'Documents absent from source_inventory.json: {_sample(set(hashed)-set(inventory))}')
+    if set(inventory)-set(hashed):raise ValueError(f'source_inventory.json lists documents absent from the export: {_sample(set(inventory)-set(hashed))}')
+    disagreed={n for n in hashed if hashed[n]!=inventory[n]}
+    if disagreed:raise ValueError(f'Packed hash disagrees with source_inventory.json: {_sample(disagreed)}')
+    log_sources=sum(len(d.get('parsed_log_sources',{})) for d in datasets.values())
     verified=0
     verified_logs=0
     if a.source:
@@ -49,12 +60,16 @@ def main():
             lo={key(r):r for r in low['episodes']};hi={key(r):r for r in high['episodes']}
             shared=lo.keys()&hi.keys();valid=[k for k in shared if lo[k]['success'] is not None and hi[k]['success'] is not None]
             coverage.append(dict(low=name,high=high_name,matched=len(valid),low_only=len(lo.keys()-hi.keys()),high_only=len(hi.keys()-lo.keys()),missing_outcomes=len(shared)-len(valid)))
-    # Source verification needs the original log tree. Without --source the counts
-    # cannot be recomputed, so the recorded ones are carried forward rather than
-    # overwritten with zeros.
-    report=dict(settings=len(settings),episodes=sum(r['episodes'] for r in rows),source_documents=len(documents),verified_source_documents=verified if a.source else prior.get('verified_source_documents',0),verified_log_sources=verified_logs if a.source else prior.get('verified_log_sources',0),settings_inventory=rows,pairing_coverage=coverage)
+    # Verification against the original log tree is a claim about files this
+    # repository does not carry, so it is recorded only when --source actually
+    # re-checked them: null otherwise, never a stale number from a previous run.
+    report=dict(settings=len(settings),episodes=sum(r['episodes'] for r in rows),source_documents=len(documents),
+                hashed_source_documents=len(hashed),inventory_verified_documents=len(hashed),log_sources=log_sources,
+                source_tree_verification=dict(documents=verified,log_sources=verified_logs) if a.source else None,
+                settings_inventory=rows,pairing_coverage=coverage)
     output.write_text(json.dumps(report,indent=2)+'\n')
-    checked=f"{verified} source documents" if a.source else f"{report['verified_source_documents']} source documents carried forward (no --source)"
-    print(f"Validated {len(settings)} settings, {report['episodes']} episodes, {checked}; report: {output}")
+    checked=f"{verified} documents and {verified_logs} log sources re-checked against --source" if a.source else 'no --source tree given'
+    print(f"Validated {len(settings)} settings, {report['episodes']} episodes, "
+          f"{len(hashed)} document hashes against source_inventory.json ({checked}); report: {output}")
 
 if __name__=='__main__':main()

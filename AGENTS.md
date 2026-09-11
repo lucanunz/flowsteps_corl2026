@@ -59,12 +59,12 @@ figures/               ALL generated output — untracked
 - `*/make_*_latex_table_glyph.py` — the glyph LaTeX result tables.
 
 `ablations/` runs as `reproduce.py ablations` (and as part of `all`), but not
-through the temp-tree materialization: its two scripts read the
+through the temp-tree materialization: its three scripts read the
 `evaluation == "checkpoint"` settings straight out of `data/` via
 `scripts/paired.py`, so they execute in place and write to `figures/ablations/`.
-`ablations/README.md` documents the checkpoint-to-series mapping and the one
-X-VLA point that comes from the primary evaluation instead of the checkpoint
-cohort.
+`ablations/README.md` documents the checkpoint-to-series mapping, the 95%
+confidence intervals on the step gap, and the one X-VLA point that comes from
+the primary evaluation instead of the checkpoint cohort.
 
 Each `tri_statistics_*` package splits the same way: `config.py` (constants,
 model order, styling), `io_*.py` (loading), `pairs.py` (pair construction),
@@ -88,7 +88,10 @@ the temp tree.
 regenerated export from the original log tree, not a hand-patched file. The
 export-side scripts are not part of this repository.
 Absolute paths inside provenance payloads are historical strings and are never
-used to locate anything.
+used to locate anything. The same goes for `source_documents` keys: they name
+where a document lived in its original tree (`pi05_indepth/...`, `openpi/...`,
+and so on), which this repository does not carry. Only `--source` resolves them,
+against a tree you supply.
 
 ## Pairing rules
 
@@ -175,22 +178,12 @@ reintroduce them; drop them again if you regenerate.
 ## Known data caveats
 
 Read `VALIDATION.md` before drawing conclusions from edge cases. Across all 193
-settings there are no conflicting log observations, and exactly three defects:
+settings there are no conflicting log observations, and exactly one defect:
 
-- **`libero__pi05__n10__checkpoint__ckpt-29k_pretrainedVLM`** — aggregates report
-  40 tasks x 50 trials = 2,000; the console logs yield **37** episode outcomes.
-  30 tasks have zero logged episodes, 10 are partial (2-7 of 50).
-- **`libero__pi05__n1__checkpoint__ckpt-29k_pretrainedVLM`** — 1,000 of 2,000
-  trials logged. `libero_10` and `libero_object` are complete; **`libero_goal`
-  and `libero_spatial` have zero logged episodes** for all 20 of their tasks.
 - **`libero__pi05__n1__horizon_sweep__h1`** — one success/failure line in
   `eval_libero_spatial_n1_shard3.log` (offset 21560) has no intact task/episode
   context. It sits in `unidentified_log_outcomes`, unassigned. That setting's
   2,000 episodes are otherwise complete and reconcile with its aggregates.
-
-For the two 29k_pretrainedVLM settings the task-level `task_counts` are sound and
-the episode-level record is not. Never pair them into a "complete run"; the
-per-task mismatch detail is in `normalization.log_aggregate_mismatches`.
 
 The Polaris benchmark and the GR00T model were removed from this export
 (2026-09-09); references to them should not reappear.
@@ -201,6 +194,14 @@ The Polaris benchmark and the GR00T model were removed from this export
 python scripts/validate.py            # export integrity + pairing coverage
 python reproduce.py all               # full figure/table regeneration
 ```
+
+`validate.py` recomputes every field of `validation.json` from the repository; no
+value is inherited from the previous report. It checks each packed
+`source_sha256` against `source_inventory.json` — a missing, extra or disagreeing
+entry is a hard error — and reports the result as
+`inventory_verified_documents`. That check needs no original log tree.
+`source_tree_verification` is `null` unless `--source` re-read the original files
+on that run; the tree it would need is not public, so expect `null` here.
 
 `reproduce.py all` is the real integration test — it exercises every retained
 paper script, the `ablations` target included. It takes a few minutes and writes ~33 MB into `figures/`.

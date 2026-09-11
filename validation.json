@@ -1,9 +1,11 @@
 {
   "settings": 193,
-  "episodes": 444329,
-  "source_documents": 7758,
-  "verified_source_documents": 7736,
-  "verified_log_sources": 1160,
+  "episodes": 447292,
+  "source_documents": 7826,
+  "hashed_source_documents": 7804,
+  "inventory_verified_documents": 7804,
+  "log_sources": 1140,
+  "source_tree_verification": null,
   "settings_inventory": [
     {
       "file": "calvin__flower__n1.json",
@@ -1629,9 +1631,9 @@
         "evaluation": "checkpoint",
         "horizon": null
       },
-      "episodes": 37,
+      "episodes": 2000,
       "pairing_bases": {
-        "episode_id": 37
+        "episode_id": 2000
       },
       "task_counts": 40,
       "conflicts": 0
@@ -2203,9 +2205,9 @@
         "evaluation": "checkpoint",
         "horizon": null
       },
-      "episodes": 1000,
+      "episodes": 2000,
       "pairing_bases": {
-        "episode_id": 1000
+        "episode_id": 2000
       },
       "task_counts": 40,
       "conflicts": 0

@@ -4,8 +4,9 @@ Training-progress ablations for the 1-step vs multi-step comparison: success
 rate and the step gap as a function of training progress, on LIBERO.
 
 ```bash
-python reproduce.py ablations                         # both scripts, into figures/ablations/
+python reproduce.py ablations                         # all three, into figures/ablations/
 python ablations/plot_paper_training_curves_grid.py   # 2x3 grid of step-gap panels
+python ablations/plot_paper_training_curves_grid_ci.py  # the same grid, with 95% CIs
 python ablations/plot_paper_training_curves.py        # the individual panels
 ```
 
@@ -13,11 +14,43 @@ python ablations/plot_paper_training_curves.py        # the individual panels
 tree the other targets use: these scripts read the normalized rows in `data/`,
 not the packed `source_documents`.
 
-Both take `--data` (default: the repo's `data/`) and `--out_dir` (default:
+All three take `--data` (default: the repo's `data/`) and `--out_dir` (default:
 `figures/ablations/`, untracked like the rest of `figures/`).
 `plot_paper_training_curves.py`
 also takes `--results` to plot one suite or a comma-separated subset instead of
 the four-suite mean, and `--show_legend`.
+
+## The 95% intervals
+
+`plot_paper_training_curves_grid_ci.py` draws the same panels and the same
+curves as `plot_paper_training_curves_grid.py`, with a shaded 95% interval
+around each. The plotted quantity is the paired gap
+Δ = success(n=reference) − success(n=1) at one checkpoint, so the interval is
+the paired one the repository uses elsewhere: Newcombe (1998) Method 10 on the
+2×2 table of the two policies' per-episode outcomes
+(`paired_newcombe_ci` in `scripts/equivalence.py`) at 95% two-sided coverage —
+*not* the 90% CI the TOST path inverts. Episodes are joined by
+(suite, task, episode_id) through `scripts/paired.py`. The top row's tables run
+over the 500 LIBERO-10 episodes, the bottom row's over the 1,500
+spatial/goal/object episodes pooled (the three suites are equal-sized, so the
+pooled rate is the mean-of-suites the panel plots; the script asserts the
+table's marginals reproduce the plotted value at every point). `--ylim` overrides
+the limits, which by default widen past the original figure's −20..15 to fit the
+bands.
+
+Two points of care, both printed when the figure is written:
+
+- **X-VLA's checkpoint sweeps do not key-join.** Each task sits in exactly one
+  evaluation shard and `episode_id` is `[shard, index]`, but 16 of the 40 tasks
+  landed in a differently-named shard in the n=1 and n=10 runs, so 800 of 2,000
+  keys differ by shard label alone while the per-task index sets 0–49 match.
+  These rows already carry `pairing_basis: assumed_order`, so the script joins
+  them within (suite, task) by episode index, recovering all 2,000 pairs.
+  `--no_order_join` refuses that and leaves those five points without an
+  interval; `--no_allow_order` drops X-VLA's intervals entirely.
+A point whose two settings cannot be paired at all keeps its estimate but is
+drawn with a hollow marker carrying no interval. No point in the current export
+does.
 
 ## What they read
 

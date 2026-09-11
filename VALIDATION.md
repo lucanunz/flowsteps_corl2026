@@ -88,14 +88,21 @@ Compared the generated artifacts with the previous checkout:
 The new overview plots are separate from this comparison. Existing paper plot
 algorithms and statistical defaults were preserved.
 
-## Source limitations retained explicitly
+## What `validate.py` reports
 
-The Pi0.5 `29k_pretrainedVLM` checkpoint has only 1,000 logged outcomes at one
-inference step and 37 at ten steps, while its aggregate JSONs contain complete
-2,000-trial marginal counts. Missing task logs are recorded in each file's
-`normalization.log_aggregate_mismatches`. Full marginal counts and the observed
-trial subset are both preserved. The paired analysis refuses an implicit
-complete-run comparison here.
+`validation.json` is recomputed in full on every run; no value carries over from
+the previous report. Each packed `source_sha256` is checked against
+`source_inventory.json` and the agreeing count is `inventory_verified_documents`
+(7,804 of 7,826 documents; the other 22 carry no hash). A document missing from
+the inventory, one the inventory lists but the export does not hold, or a
+disagreeing hash is a hard error. That check runs entirely in-repo.
+
+`source_tree_verification` is the separate claim that the packed payloads still
+match the original evaluation logs. It is recorded only when `--source` re-read
+those files on that run, and is `null` otherwise — the log tree is not part of
+this repository.
+
+## Source limitations retained explicitly
 
 One Pi0.5 horizon log contains an extra success/failure message without intact
 trial context. It is retained in `unidentified_log_outcomes` and is not assigned
